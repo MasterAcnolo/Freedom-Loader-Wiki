@@ -1,0 +1,21 @@
+#about{
+    text-align: justify;
+    margin: 0 10em;
+    font-size: 1.2em;
+}
+
+.first-line{
+    display: flex;
+    height: fit-content;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    gap: 15%;
+    align-items: center;
+    background-color: rgba(47, 47, 47, 0.5);
+}
+
+.first-line img{
+    width: 20%;
+    height: auto;
+}

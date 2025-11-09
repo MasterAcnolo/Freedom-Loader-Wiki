@@ -1,0 +1,14 @@
+header a{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+header a img{
+    width: 5em;
+    margin: 10px;
+}
+
+header a img:hover{
+    transform: scale(1.1);
+}
