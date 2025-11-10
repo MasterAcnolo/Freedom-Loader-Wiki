@@ -1,21 +1,26 @@
 #about{
     text-align: justify;
-    margin: 0 10em;
+    margin: 3em 10em;
     font-size: 1.2em;
 }
 
-.first-line{
+.article{
     display: flex;
     height: fit-content;
-    margin: 20px;
+    width: fit-content;
+    margin: 150px;
+    gap: 35px;
     padding: 15px;
     border-radius: 15px;
-    gap: 15%;
     align-items: center;
     background-color: rgba(47, 47, 47, 0.5);
 }
 
-.first-line img{
+.article img{
     width: 20%;
     height: auto;
+}
+
+.article img:nth-child(1){
+    width: 15%;
 }
