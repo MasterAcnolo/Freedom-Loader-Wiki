@@ -27,6 +27,7 @@ nav{
     justify-content: space-around;
     width: 20%;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav a{
