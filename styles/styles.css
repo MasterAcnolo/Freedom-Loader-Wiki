@@ -9,7 +9,7 @@
 @import url("layout/container.css");
 @import url("layout/footer.css");
 
-@import url("components/download-btn.css");
+
 
 body {
     margin: 0;
@@ -31,14 +31,4 @@ html{
 *{
     /* outline: solid red 2px; */
     transition: ease-in-out 0.2s;
-}
-
-.landing{
-
-    background: url("../assets/pictures/background.webp");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    height: 100vh;
 }
