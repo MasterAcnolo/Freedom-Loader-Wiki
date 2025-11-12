@@ -20,6 +20,7 @@ body {
     color: var(--text-color);
     font-family: Poppins;
     background-color: rgb(27, 27, 27);
+    overflow-x: hidden;
 
 }
 

@@ -10,8 +10,8 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    gap: 40px;
 }
 
 .footer-section h4 {
@@ -32,6 +32,7 @@ footer {
 .footer-section a {
     color: #fff;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .footer-section a:hover {
@@ -43,4 +44,45 @@ footer {
     font-size: 12px;
     border-top: 1px solid #333;
     padding-top: 10px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 15px 15px 15px;
+        font-size: 13px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-section h4 {
+        font-size: 20px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 25px 10px;
+    }
+
+    .footer-section h4 {
+        font-size: 18px;
+    }
+
+    .footer-section ul li a {
+        font-size: 13px;
+    }
+
+    .footer-credits {
+        font-size: 11px;
+    }
 }
