@@ -16,8 +16,8 @@
     justify-content: center;
 
     transition: transform 0.15s ease, background 0.2s ease;
-    margin: 20px auto;
-    margin-bottom: 100px;
+    margin: 0px auto;
+    margin-bottom: 50px;
 }
 
 .download-btn h3 {

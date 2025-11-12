@@ -1,14 +1,18 @@
 #about{
     text-align: justify;
-    margin: 3em 10em;
+    margin: 2em 10em;
     font-size: 1.2em;
+}
+
+section h2{
+    text-align: center;
 }
 
 .article{
     display: flex;
     height: fit-content;
     width: fit-content;
-    margin: 150px;
+    margin: 150px 10px;
     gap: 35px;
     padding: 15px;
     border-radius: 15px;
