@@ -1,0 +1,28 @@
+.about {
+    padding: 80px 10%;
+    color: var(--text-color);
+    background: var(--background-color);
+    text-align: center;
+}
+
+.about .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-family: "Marko One", sans-serif;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+.about .btn {
+    margin-top: 20px;
+}

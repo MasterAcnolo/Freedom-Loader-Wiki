@@ -24,7 +24,7 @@ body {
 
     color: var(--text-color);
     font-family: Poppins;
-    background-color: var(--background-color);
+    background: var(--background-color);
     overflow-x: hidden;
 
 }

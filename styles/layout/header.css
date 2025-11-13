@@ -6,6 +6,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     font-family: "Marko One", sans-serif;
+    background: var(--header-background-color);
 }
 
 /* Logo */
