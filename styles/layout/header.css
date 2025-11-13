@@ -87,3 +87,78 @@ header button:hover {
     background-color: #7a7a7a;
     transform: scale(1.03);
 }
+
+@media (max-width: 858px) {
+
+    #logo img{
+        height: 30px;
+    }
+
+    nav a{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    #logo img{
+        height: 30px;
+    }
+    
+    nav{
+        justify-self: center;
+        margin-left: 15px;
+    }
+
+    nav a{
+        font-size: 1rem;
+    }
+
+    .right{
+        width: fit-content;;
+    }
+
+    #download-btn{
+        display: none;
+    }
+
+    .right button{
+        font-style: 0.8rem;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    #logo img{
+        height: 25px;
+        margin-left: -15px;
+    }
+    
+    nav{
+        justify-self: center;
+        margin-left: 15px;
+    }
+
+    nav a{
+        font-size: 0.8rem;
+    }
+
+    .right{
+        width: fit-content;;
+    }
+
+    #download-btn{
+        display: none;
+    }
+
+    .right button{
+        font-style: 0.5rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .right{
+        display: none;
+    }
+}

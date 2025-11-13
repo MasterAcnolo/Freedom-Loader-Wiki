@@ -8,10 +8,14 @@
     <link rel="icon" href="assets/icon/freedomLoader.png" />
 
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   
   <body>
-    <header>
+    <header data-aos="fade-down">
       <a href="#" id="logo">
         <img src="assets/icon/Freedom Loader.png" style="filter: invert();" />
       </a>
@@ -28,6 +32,18 @@
       </div>
     </header>
 
+    <section class="hero">
+      <div class="hero-content" data-aos="fade-right">
+        <h1>Freedom Loader</h1>
+        <p>Put <span>Freedom</span> in your <span>Downloads</span>.</p>
+        <div class="hero- buttons">
+          <a href="pages/download.html" class="btn primary">Download</a>
+          <a href="#" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+      <img src="assets/pictures/apercu1.2.4.png" alt="Freedom Loader illustration" class="hero-img" data-aos="fade-left">
+    </section>
+
 
     <main>
 
@@ -36,5 +52,13 @@
     <footer>
 
     </footer>
+
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
