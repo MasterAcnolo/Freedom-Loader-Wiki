@@ -134,22 +134,9 @@ header button:hover {
         height: 25px;
         margin-left: -15px;
     }
-    
-    nav{
-        justify-self: center;
-        margin-left: 15px;
-    }
 
     nav a{
         font-size: 0.8rem;
-    }
-
-    .right{
-        width: fit-content;;
-    }
-
-    #download-btn{
-        display: none;
     }
 
     .right button{
