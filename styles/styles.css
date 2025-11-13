@@ -33,6 +33,21 @@ html{
     scroll-behavior: smooth;  
 }
 
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: fit-content;
+    height: fit-content;
+}
+
+.temp a{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+
 /* Loader overlay */
 #loader {
     position: fixed;
@@ -61,3 +76,4 @@ html{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
