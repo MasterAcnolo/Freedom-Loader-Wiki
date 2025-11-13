@@ -34,20 +34,6 @@ html{
 }
 
 
-.temp{
-    display: flex;
-    flex-direction: column;
-    background-color: gray;
-    width: fit-content;
-    height: fit-content;
-}
-
-.temp a{
-    display: flex;
-    height: fit-content;
-    width: fit-content;
-}
-
 /* Loader overlay */
 #loader {
     position: fixed;

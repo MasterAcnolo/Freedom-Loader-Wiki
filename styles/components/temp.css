@@ -1,0 +1,30 @@
+.temp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.temp a{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(126, 126, 126);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.temp a:hover{
+    transform: scale(1.05);
+}
