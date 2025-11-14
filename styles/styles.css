@@ -29,6 +29,8 @@ body {
 
 }
 
+
+
 html{
     scroll-behavior: smooth;  
 }
@@ -63,3 +65,11 @@ html{
     100% { transform: rotate(360deg); }
 }
 
+.contact-page a, .privacy-policy a{
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+.contact-page a:hover, .privacy-policy a:hover{
+    text-decoration: underline;
+}
