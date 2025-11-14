@@ -17,6 +17,15 @@
     margin-bottom: 40px;
 }
 
+.faq-answer a{
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+.faq-answer a:hover{
+    text-decoration: underline;
+}
+
 /* Accordéon */
 .faq-item {
     margin-bottom: 15px;
@@ -48,7 +57,7 @@
     border-left: 3px solid #1e90ff;
     padding: 0 20px;
     border-radius: 0 8px 8px 0;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .faq-answer p {
