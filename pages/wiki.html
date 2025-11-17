@@ -9,12 +9,12 @@
 
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/components/temp.css">
+    <link rel="stylesheet" href="../styles/pages/wiki.css">
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 
   </head>
   
@@ -42,14 +42,25 @@
       </div>
     </header>
 
-    <main style="height: 80vh;" class="temp-container"> 
+  <main>
+    <div class="wiki-container">
+      <aside class="wiki-sidebar">
+        <h3>Documentation</h3>
+        <ul>
+          <li><a href="#" data-file="Installation.md">Installation</a></li>
+          <li><a href="#" data-file="Usage.md">Usage</a></li>
+          <li><a href="#" data-file="Issues.md">Common Issues</a></li>
+          <li><a href="#" data-file="Report.md">Report Issues</a></li>
+          <li><a href="#" data-file="Contributing.md">Contributing</a></li>
 
-        <div class="temp">
-            <h2> Sorry ! There is nothing to show here, come back later !</h2>
-            <a href="../index.html"> Get back to Freedom Place </a>
-        </div>
-
-    </main>
+        </ul>
+      </aside>
+      <section class="wiki-content" id="wiki-content">
+        <h1>Welcome to Freedom Loader Wiki</h1>
+        <p>Select a topic from the sidebar to get started.</p>
+      </section>
+    </div>
+  </main>
 
     <footer class="footer">
       <div class="footer-container">
@@ -92,6 +103,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../script/loader.js"></script>
+    <script src="../script/wiki.js"></script>
 
     <script>
       AOS.init();
