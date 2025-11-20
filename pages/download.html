@@ -1,110 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download</title>
 
-    <link rel="icon" href="../assets/icon/freedomLoader.png">
+    <link rel="icon" href="../assets/icon/freedomLoader.png" />
+
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/pages/download.css">
 
-</head>
-<body>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <header class="navbar">
-        <div class="navbar-left">
-            <a href="../index.html" class="home-link">
-            <img src="../assets/icon/home.png" alt="Home Icon" class="home-icon">
-            <span class="home-text">Freedom Loader</span>
-            </a>
-        </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+  
+  <body>
 
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
 
-        <nav class="navbar-right">
-            <a href="../index.html">Home</a>
-            <a href="download.html" style="opacity: 0.5; pointer-events: none;">Download</a>
-            <a href="wiki.html">Wiki</a>
-        </nav>
+
+    <header data-aos="fade-down">
+      <a href="../index.html" id="logo">
+        <img src="../assets/icon/Freedom Loader.png" style="filter: invert();" />
+      </a>
+
+      <nav>
+        <a href="about.html">About</a>
+        <a href="wiki.html">Wiki</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
     </header>
 
+    <main>
+        <section class="download" data-aos="fade-up">
 
-
-    <section class="download-container">
-
-        <h1> Download</h1>
-
-        <div class="download-card main-download">
-            <div class="info">
-                <h2>Download for Windows</h2>
-                <p>Installer (.exe) — latest stable version</p>
+            <div class="download-block main-download">
+                <div class="download-header">
+                    <h3>Download for Windows</h3>
+                    <a href="" class="btn primary" target="_blank" id="download-btn-page">Download Installer</a>
+                </div>
+                <p>Installer (.exe), latest stable version:  <strong> <span id="latest-version"> </span> </strong></p>
             </div>
 
-            <a href="https://github.com/MasterAcnolo/Freedom-Loader/releases/download/1.2.4/Freedom.Loader.Setup.1.2.4.exe" class="btn">Download</a>
-        </div>
 
-        <div class="download-card repo">
-            <div class="info">
-                <h2>GitHub Repository</h2>
+            <div class="download-block">
+                <div class="download-header">
+                    <h3>GitHub Repository</h3>
+                    <a href="https://github.com/MasterAcnolo/Freedom-Loader" class="btn secondary" target="_blank">Open Repository</a>
+                </div>
                 <p>Source code, experimental builds, issues, contributions</p>
             </div>
 
-            <a href="https://github.com/MasterAcnolo/Freedom-Loader" target="_blank" class="btn alt">
-                Open Repository
-            </a>
-        </div>
-
-        <div class="download-card old-versions">
-            <div class="info">
-                <h2>Old Releases</h2>
-                <p>Browse older versions and archived builds</p>
+            <div class="download-block">
+                <div class="download-header">
+                    <h3>Latest Changelog</h3>
+                    <a href="https://github.com/MasterAcnolo/Freedom-Loader/releases/latest" class="btn secondary" target="_blank">View Changelog</a>
+                </div>
+                <p>Check out the release notes for the latest updates, fixes, and new features added to Freedom Loader.</p>
             </div>
 
-            <a href="https://github.com/MasterAcnolo/Freedom-Loader/releases" target="_blank" class="btn small">
-                View
-            </a>
-        </div>
-
-        <div class="changelog">
-            <h3>Latest Changelog</h3>
-            <p>Coming soon. This will fetch the latest GitHub release notes.</p>
-        </div>
-
-    </section>
-
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-            <h4>Important</h4>
-            <ul>
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="wiki.html">Wiki</a></li>
-            </ul>
+            <div class="download-block">
+                <div class="download-header">
+                    <h3>Old Releases</h3>
+                    <a href="https://github.com/MasterAcnolo/Freedom-Loader/releases" class="btn secondary" target="_blank">View Old Releases</a>
+                </div>
+                <p>Browse older versions and archived builds if you need a previous release or want to test older features.</p>
             </div>
 
-            <div class="footer-section">
-            <h4>Links</h4>
-            <ul>
-                <li><a href="https://github.com/MasterAcnolo" target="_blank">GitHub</a></li>
-                <li><a href="https://masteracnolo.github.io/No-Sense/" target="_blank">My Website</a></li>
-            </ul>
-            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Freedom Loader</h3>
+          <p>Put Freedom in your Downloads.</p>
         </div>
 
-        <div class="footer-credits">
-            <p>Freedom Loader © 2025. Made by MasterAcnolo. All rights reserved.</p>
+        <div class="footer-column">
+          <h4>Site</h4>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="download.html">Download</a>
+          <a href="wiki.html">Wiki</a>
+          <a href="faq.html">FAQ</a>
+
         </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <a href="legal/contact.html">Contact</a>
+          <a href="legal/privacy.html">Privacy</a>
+          <a href="legal/terms.html">Terms</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow us</h4>
+          <div class="footer-socials">
+            <a href="https://masteracnolo.github.io/No-Sense" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://x.com/MasterAcnolo" target="_blank" ><i class="fab fa-x-twitter"></i></a>
+            <a href="https://github.com/MasterAcnolo" target="_blank" ><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCS55e2-ZslXqGzznB_7N4Sg" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Freedom Loader — All rights reserved.</p>
+      </div>
     </footer>
 
-    <script src="../script/responsive.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script/loader.js"></script>
+    <script src="../script/gitFetch.js"></script>
 
-</body>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
 </html>

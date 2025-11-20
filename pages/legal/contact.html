@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy</title>
+
+    <link rel="icon" href="../../assets/icon/freedomLoader.png" />
+
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/pages/contact.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+  </head>
+  
+  <body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <header data-aos="fade-down">
+      <a href="../../index.html" id="logo">
+        <img src="../../assets/icon/Freedom Loader.png" style="filter: invert();" />
+      </a>
+
+      <nav>
+        <a href="../about.html">About</a>
+        <a href="../wiki.html">Wiki</a>
+        <a href="../faq.html">FAQ</a>
+      </nav>
+
+      <div class="right">
+        <!-- <button type="submit">☀️</button> -->
+        <a href="../download.html" id="download-btn">Download</a>
+      </div>
+    </header>
+
+    <main>
+        <section class="contact-page" style="max-width: 900px; margin: 50px auto; color: #fff; padding: 0 20px;">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, suggestions, or need support, reach out using the methods below or fill out the form.</p>
+
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Join the discussions, report bugs, and contribute to the project:</p>
+                    <a href="https://github.com/MasterAcnolo/Freedom-Loader/discussions" target="_blank">GitHub Discussions</a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fab fa-linkedin-in"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect for updates, networking, and professional inquiries:</p>
+                    <a href="https://www.linkedin.com/in/axelnicolas25" target="_blank">@axelnicolas25</a>
+                </div>
+            </div>
+
+
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="apikey" value="cd8edfb2-7b53-4db9-a545-8a055f04612c">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Freedom Loader</h3>
+          <p>Put Freedom in your Downloads.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Site</h4>
+          <a href="../../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../download.html">Download</a>
+          <a href="../wiki.html">Wiki</a>
+          <a href="../faq.html">FAQ</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow us</h4>
+          <div class="footer-socials">
+            <a href="https://masteracnolo.github.io/No-Sense" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://x.com/MasterAcnolo" target="_blank" ><i class="fab fa-x-twitter"></i></a>
+            <a href="https://github.com/MasterAcnolo" target="_blank" ><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCS55e2-ZslXqGzznB_7N4Sg" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Freedom Loader — All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../../script/loader.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

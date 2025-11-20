@@ -1,85 +1,179 @@
-.download-container {
+header{
+    justify-content: center;
+}
+
+.download {
+    padding: 80px 20%;
+    color: var(--text-color);
+    margin-top: 30px;
+}
+
+.download .container {
     max-width: 900px;
-    margin: 60px auto 80px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
+    margin: 0 auto;
 }
 
-.download-container h1{
-    align-self: center;
-    font-size: 3em;
-    margin-bottom: 10px;
+.download h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-family: "Marko One", sans-serif;
+    text-align: center;
 }
 
-.download-card {
-    background-color: rgb(20, 20, 20);
-    border: 1px solid rgb(40, 40, 40);
-    border-radius: 14px;
-    padding: 22px;
+.download-block {
+    margin-bottom: 50px;
+}
+
+.download-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.2s ease;
+    margin-bottom: 10px;
+    gap: 15px;
 }
 
-.download-card:hover {
-    border-color: rgba(255, 255, 255, 0.18);
-    transform: translateY(-3px);
-}
-
-.download-card h2 {
+.download-header h3 {
+    font-size: 1.8rem;
     margin: 0;
-    font-size: 1.4rem;
+}
+
+.download-header .btn {
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.download-block p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.download-header .btn.primary {
+    background-color: #919191;
     color: var(--text-color);
 }
 
-.download-card p {
-    margin: 6px 0 0 0;
-    color: var(--text-color-secondary);
+.download-header .btn.primary:hover {
+    background-color: #7a7a7a;
+    transform: scale(1.03);
 }
 
-.download-card .btn {
-    background: linear-gradient(135deg, #555, #777);; 
-    padding: 12px 28px;
-    border-radius: 14px;
+.download-header .btn.secondary {
+    border: 2px solid #919191;
+    color: var(--text-color);
+}
+
+.download-header .btn.secondary:hover {
+    background-color: #91919133;
+    transform: scale(1.03);
+}
+
+/* Bloc principal plus gros */
+.download-block.main-download .download-header h3 {
+    font-size: 2.5rem;
+}
+
+.download-block.main-download p {
+    font-size: 1.3rem;
+}
+
+.download-block.main-download .download-header .btn {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
+
+/* Blocs secondaires uniformes */
+.download-block:not(.main-download) .download-header h3 {
+    font-size: 1.6rem;
+}
+
+.download-block:not(.main-download) p {
+    font-size: 1rem;
+}
+
+.download-block:not(.main-download) .download-header .btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    width: 180px;
+}
+
+/* Bouton Download isolé */
+#download-btn-page {
+    display: inline-block;
+    background-color: #919191;
+    color: var(--text-color);
     text-decoration: none;
-    color: white;
-    font-weight: 700;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 12px 30px;
+    border-radius: 15px;
+    transition: all 0.2s ease;
 }
 
-.download-card .btn:hover {
-    opacity: 1;
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+#download-btn-page:hover {
+    background-color: #7a7a7a;
+    transform: scale(1.03);
 }
 
-.download-card .btn.alt {
-    background: rgb(65, 65, 65);
+/* Responsive */
+@media (max-width: 900px) {
+    .download {
+        padding: 60px 5%;
+    }
+
+    .download h2 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .download-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .download-block p {
+        font-size: 1rem;
+    }
+
+    .download-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .download-header .btn {
+        width: 100%;
+    }
+
+    #download-btn-page {
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 12px 0;
+    }
 }
 
-.download-card .btn.small {
-    padding: 8px 16px;
-    font-size: 0.85rem;
-}
+@media (max-width: 500px) {
+    .download h2 {
+        font-size: 2rem;
+    }
 
-/* Changelog section */
-.changelog {
-    margin-top: 30px;
-    background-color: rgb(17, 17, 17);
-    border: 1px solid rgb(40, 40, 40);
-    padding: 20px;
-    border-radius: 14px;
-}
+    .download-block.main-download .download-header h3 {
+        font-size: 2rem;
+    }
 
-.changelog h3 {
-    margin: 0 0 10px 0;
-}
+    .download-block:not(.main-download) .download-header h3 {
+        font-size: 1.4rem;
+    }
 
-.changelog p {
-    color: var(--text-color-secondary);
+    .download-block.main-download p {
+        font-size: 1.2rem;
+    }
+
+    .download-block:not(.main-download) p {
+        font-size: 0.95rem;
+    }
 }

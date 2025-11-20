@@ -1,0 +1,79 @@
+.faq-page h1,
+.faq-page h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.faq-page p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.faq-category {
+    margin-bottom: 40px;
+}
+
+.faq-answer a{
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+.faq-answer a:hover{
+    text-decoration: underline;
+}
+
+/* Accordéon */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: rgba(30,144,255,0.2);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    background-color: rgba(255,255,255,0.03);
+    border-left: 3px solid #1e90ff;
+    padding: 0 20px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 2px;
+}
+
+.faq-answer p {
+    margin: 15px 0;
+    color: #ccc;
+}
+
+/* Open state */
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 15px 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faq-question {
+        font-size: 0.95rem;
+    }
+}

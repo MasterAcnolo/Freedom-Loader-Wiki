@@ -1,24 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freedom Wiki</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki</title>
 
-    <link rel="icon" href="../assets/icon/freedomLoader.png">
+    <link rel="icon" href="../assets/icon/freedomLoader.png" />
+
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/components/temp.css">
     <link rel="stylesheet" href="../styles/pages/wiki.css">
 
-</head>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <div class="container">
-        
-        <img src="../assets/pictures/under-construction.webp">
-        <h1> Sorry! This Page is still under construction </h1>
+  </head>
+  
+  <body>
 
-        <a href="../index.html"> Home Page </a>
+    <div id="loader">
+        <div class="spinner"></div>
     </div>
 
-</body>
+
+    <header data-aos="fade-down">
+      <a href="../index.html" id="logo">
+        <img src="../assets/icon/Freedom Loader.png" style="filter: invert();" />
+      </a>
+
+      <nav>
+        <a href="about.html">About</a>
+        <a href="wiki.html">Wiki</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
+      <div class="right">
+        <!-- <button type="submit">☀️</button> -->
+        <a href="download.html" id="download-btn">Download</a>
+      </div>
+    </header>
+
+  <main>
+    <div class="wiki-container">
+      <aside class="wiki-sidebar">
+        <h3>Documentation</h3>
+        <ul>
+          <li><a href="#" data-file="Installation.md">Installation</a></li>
+          <li><a href="#" data-file="Firefox.md">Firefox</a></li>
+          <li><a href="#" data-file="Usage.md">Usage</a></li>
+          <li><a href="#" data-file="Issues.md">Common Issues</a></li>
+          <li><a href="#" data-file="Report.md">Report Issues</a></li>
+          <li><a href="#" data-file="Contributing.md">Contributing</a></li>
+
+        </ul>
+      </aside>
+      <section class="wiki-content" id="wiki-content">
+        <h1>Welcome to Freedom Loader Wiki</h1>
+        <p>Select a topic from the sidebar to get started.</p>
+      </section>
+    </div>
+  </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Freedom Loader</h3>
+          <p>Put Freedom in your Downloads.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Site</h4>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="download.html">Download</a>
+          <a href="wiki.html">Wiki</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <a href="legal/contact.html">Contact</a>
+          <a href="legal/privacy.html">Privacy</a>
+          <a href="legal/terms.html">Terms</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow us</h4>
+          <div class="footer-socials">
+            <a href="https://masteracnolo.github.io/No-Sense" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://x.com/MasterAcnolo" target="_blank" ><i class="fab fa-x-twitter"></i></a>
+            <a href="https://github.com/MasterAcnolo" target="_blank" ><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCS55e2-ZslXqGzznB_7N4Sg" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Freedom Loader — All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script/loader.js"></script>
+    <script src="../script/wiki.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

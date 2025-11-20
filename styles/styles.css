@@ -1,5 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+
 
 /* Imports */
 @import url("variables.css");
@@ -9,7 +11,10 @@
 @import url("layout/container.css");
 @import url("layout/footer.css");
 
-@import url("components/download-btn.css");
+*{
+    /* outline: solid red 2px; */
+    transition: ease-in-out 0.2s;
+}
 
 body {
     margin: 0;
@@ -19,26 +24,52 @@ body {
 
     color: var(--text-color);
     font-family: Poppins;
-    background-color: rgb(27, 27, 27);
+    background: var(--background-color);
     overflow-x: hidden;
 
 }
+
+
 
 html{
     scroll-behavior: smooth;  
 }
 
-*{
-    /* outline: solid red 2px; */
-    transition: ease-in-out 0.2s;
+
+/* Loader overlay */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
 }
 
-.landing{
+/* Spinner */
+.spinner {
+    border: 6px solid #2c2c2c; /* background part */
+    border-top: 6px solid #919191; /* spinning part */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
 
-    background: url("../assets/pictures/background.webp");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    height: 100vh;
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.contact-page a, .privacy-policy a{
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+.contact-page a:hover, .privacy-policy a:hover{
+    text-decoration: underline;
 }
