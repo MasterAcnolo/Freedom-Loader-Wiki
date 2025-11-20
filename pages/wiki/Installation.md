@@ -15,3 +15,6 @@
 Freedom Loader should update itself at launch, including yt‑dlp.  
 If the update fails, try restarting the app or checking the logs.  
 You can also run the application as an Administrator if needed.
+
+## Tips
+Put your antivirus on pause during the operation. Personally I use one and when I test and download the .exe, if he is not in pause, he is spamming and blocking the process.

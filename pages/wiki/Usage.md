@@ -8,8 +8,8 @@ Relax - this is only for the yt‑dlp cookie bypass. More details here: [See Art
 You need a web browser and must be logged in to YouTube with a valid Google account.  
 If not, yt‑dlp can’t retrieve your cookies. Supported browsers:
 
-- Firefox  
-- Chrome  
-- Edge  
+- Firefox  (Sorry, it's only for cookies. You can get your URL on whatever browser you want brother)
 
-Sorry if this forces you to log into YouTube using one of these browsers - that’s a limitation from yt‑dlp, not from Freedom Loader.
+*If you need some help to install Firefox, follow the tutorial on Firefox Section* <br>
+
+**Sorry if this forces you to log into YouTube using one of these browsers - that’s a limitation from yt‑dlp, not from Freedom Loader.**
