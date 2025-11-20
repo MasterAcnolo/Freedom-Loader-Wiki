@@ -32,4 +32,5 @@ Please contribute respectfully and constructively. Everyone is welcome as long a
 
 <hr>
 
-Thanks! Every contribution makes Freedom Loader better 💪
+Thanks to Zakaria for the website icon. Here is his [IG Link](https://www.instagram.com/designmark_studio/) 🔥<br>
+Thanks! Every contribution makes Freedom Loader better 💪 
